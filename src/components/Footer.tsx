@@ -7,7 +7,7 @@ const footerLinks = {
     { label: 'Pricing', href: '/#pricing' },
   ],
   company: [
-    { label: 'Contact', href: '#' },
+    { label: 'Contact', href: '/#early-access' },
   ],
   resources: [
     { label: 'Whitepaper', href: '/whitepaper' },
