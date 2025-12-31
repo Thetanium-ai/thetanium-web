@@ -8,8 +8,8 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const navLinks = [
-    { href: '#features', label: 'Features' },
-    { href: '#pricing', label: 'Pricing' },
+    { href: '/#features', label: 'Features' },
+    { href: '/#pricing', label: 'Pricing' },
     { href: '/whitepaper', label: 'Whitepaper' },
   ]
 
@@ -40,7 +40,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <Link href="#early-access" className="btn-primary">
+            <Link href="/#early-access" className="btn-primary">
               Start Free Scan
             </Link>
           </div>
@@ -89,7 +89,7 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <Link href="#early-access" className="btn-primary text-center mt-2">
+              <Link href="/#early-access" className="btn-primary text-center mt-2">
                 Start Free Scan
               </Link>
             </div>

@@ -3,8 +3,8 @@ import ShieldLogo from './ShieldLogo'
 
 const footerLinks = {
   product: [
-    { label: 'Features', href: '#features' },
-    { label: 'Pricing', href: '#pricing' },
+    { label: 'Features', href: '/#features' },
+    { label: 'Pricing', href: '/#pricing' },
   ],
   company: [
     { label: 'Contact', href: '#' },
