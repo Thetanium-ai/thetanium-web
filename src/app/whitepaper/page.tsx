@@ -37,12 +37,11 @@ export default function Whitepaper() {
                 { num: '5', title: 'Our Solution' },
                 { num: '6', title: 'Products' },
                 { num: '7', title: 'Technology' },
-                { num: '8', title: 'Supported Chains' },
-                { num: '9', title: 'Roadmap' },
-                { num: '10', title: 'Token Economics' },
-                { num: '11', title: 'Team' },
-                { num: '12', title: 'Conclusion' },
-                { num: '13', title: 'Disclaimer' },
+                { num: '8', title: 'Roadmap' },
+                { num: '9', title: 'Token Economics' },
+                { num: '10', title: 'Team' },
+                { num: '11', title: 'Conclusion' },
+                { num: '12', title: 'Disclaimer' },
               ].map((item) => (
                 <a
                   key={item.num}
@@ -437,47 +436,9 @@ export default function Whitepaper() {
             </div>
           </section>
 
-          {/* Section 8: Supported Chains */}
+          {/* Section 8: Roadmap */}
           <section id="section-8" className="mb-16">
-            <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">8. Supported Chains</h2>
-            <div className="prose prose-lg text-royal-blue space-y-6">
-              <p>
-                Thetanium provides full support for major blockchain ecosystems across three languages, with more chains
-                to be added soon.
-              </p>
-
-              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Core Chains</h3>
-
-              <div className="space-y-6">
-                <div>
-                  <h4 className="font-semibold text-deep-blue">Ethereum</h4>
-                  <p>The largest smart contract platform by TVL. Full support for Solidity contracts across mainnet, testnets, and EVM-compatible Layer 2s.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-deep-blue">Solana</h4>
-                  <p>High-performance blockchain with growing DeFi ecosystem. Full support for Rust-based Solana programs and Anchor framework.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-deep-blue">Aptos</h4>
-                  <p>Next-generation Layer 1 built with Move. Full support for Move modules and scripts.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-deep-blue">Sui</h4>
-                  <p>High-throughput blockchain using Move. Full support for Sui Move smart contracts.</p>
-                </div>
-              </div>
-
-              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Expansion Plans</h3>
-              <p>
-                Additional blockchain support will be added through strategic partnerships. Chains under consideration
-                include Lisk, Base, Arbitrum, Polygon, Optimism, Avalanche, and other major networks.
-              </p>
-            </div>
-          </section>
-
-          {/* Section 9: Roadmap */}
-          <section id="section-9" className="mb-16">
-            <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">9. Roadmap</h2>
+            <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">8. Roadmap</h2>
             <div className="prose prose-lg text-royal-blue space-y-8">
 
               <div>
@@ -548,9 +509,9 @@ export default function Whitepaper() {
             </div>
           </section>
 
-          {/* Section 10: Token Economics */}
-          <section id="section-10" className="mb-16">
-            <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">10. Token Economics</h2>
+          {/* Section 9: Token Economics */}
+          <section id="section-9" className="mb-16">
+            <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">9. Token Economics</h2>
             <div className="prose prose-lg text-royal-blue space-y-6">
               <p>
                 The $THETANIUM token creates the economic foundation for Thetanium&apos;s security infrastructure, aligning
@@ -611,9 +572,9 @@ export default function Whitepaper() {
             </div>
           </section>
 
-          {/* Section 11: Team */}
-          <section id="section-11" className="mb-16">
-            <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">11. Team</h2>
+          {/* Section 10: Team */}
+          <section id="section-10" className="mb-16">
+            <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">10. Team</h2>
             <div className="prose prose-lg text-royal-blue space-y-4">
               <p>
                 Thetanium is built by a team with deep expertise in blockchain security, AI/ML engineering, and developer
@@ -636,9 +597,9 @@ export default function Whitepaper() {
             </div>
           </section>
 
-          {/* Section 12: Conclusion */}
-          <section id="section-12" className="mb-16">
-            <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">12. Conclusion</h2>
+          {/* Section 11: Conclusion */}
+          <section id="section-11" className="mb-16">
+            <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">11. Conclusion</h2>
             <div className="prose prose-lg text-royal-blue space-y-4">
               <p>
                 The smart contract security landscape is at an inflection point. As blockchain technology matures and
@@ -667,9 +628,9 @@ export default function Whitepaper() {
             </div>
           </section>
 
-          {/* Section 13: Disclaimer */}
-          <section id="section-13" className="mb-16">
-            <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">13. Disclaimer</h2>
+          {/* Section 12: Disclaimer */}
+          <section id="section-12" className="mb-16">
+            <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">12. Disclaimer</h2>
             <div className="prose prose-lg text-royal-blue space-y-4 text-sm">
               <p>
                 This whitepaper is for informational purposes only and does not constitute financial, legal, or investment
