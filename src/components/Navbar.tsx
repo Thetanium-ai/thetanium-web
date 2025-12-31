@@ -10,6 +10,7 @@ export default function Navbar() {
   const navLinks = [
     { href: '#features', label: 'Features' },
     { href: '#pricing', label: 'Pricing' },
+    { href: '/whitepaper', label: 'Whitepaper' },
   ]
 
   return (
