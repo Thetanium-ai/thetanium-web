@@ -95,9 +95,6 @@ export default function Footer() {
           <p className="text-white/40 text-sm">
             © 2025 Thetanium. All rights reserved.
           </p>
-          <p className="text-white/40 text-sm">
-            hello@thetanium.ai
-          </p>
         </div>
       </div>
     </footer>

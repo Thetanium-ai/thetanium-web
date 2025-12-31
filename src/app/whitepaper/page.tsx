@@ -568,12 +568,6 @@ export default function Whitepaper() {
               <p className="font-semibold text-deep-blue">
                 Join us in building the security infrastructure for the modern web.
               </p>
-
-              <div className="mt-8 space-y-2">
-                <p><a href="https://thetanium.ai" className="text-accent-blue hover:underline">thetanium.ai</a></p>
-                <p><a href="mailto:hello@thetanium.ai" className="text-accent-blue hover:underline">hello@thetanium.ai</a></p>
-                <p><a href="https://twitter.com/thetanium" className="text-accent-blue hover:underline">@thetanium</a></p>
-              </div>
             </div>
           </section>
 
