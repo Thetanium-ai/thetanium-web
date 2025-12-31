@@ -36,9 +36,8 @@ export default function Whitepaper() {
                 { num: '7', title: 'Technology' },
                 { num: '8', title: 'Roadmap' },
                 { num: '9', title: 'Token Economics' },
-                { num: '10', title: 'Team' },
-                { num: '11', title: 'Conclusion' },
-                { num: '12', title: 'Disclaimer' },
+                { num: '10', title: 'Conclusion' },
+                { num: '11', title: 'Disclaimer' },
               ].map((item) => (
                 <a
                   key={item.num}
@@ -548,34 +547,9 @@ export default function Whitepaper() {
             </div>
           </section>
 
-          {/* Section 10: Team */}
+          {/* Section 10: Conclusion */}
           <section id="section-10" className="mb-16">
-            <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">10. Team</h2>
-            <div className="prose prose-lg text-royal-blue space-y-4">
-              <p>
-                Thetanium is built by a team with deep expertise in blockchain security, AI/ML engineering, and developer
-                tooling. Our combined experience spans security research, smart contract development, and building
-                developer platforms at scale.
-              </p>
-
-              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Leadership</h3>
-              <p>
-                The founding team brings together backgrounds from leading Web3 security firms, AI research labs, and
-                enterprise software companies. We are united by a shared vision: making world-class security accessible
-                to everyone.
-              </p>
-
-              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Advisory Network</h3>
-              <p>
-                Thetanium is supported by advisors with expertise in blockchain security, tokenomics, go-to-market
-                strategy, and regulatory compliance.
-              </p>
-            </div>
-          </section>
-
-          {/* Section 11: Conclusion */}
-          <section id="section-11" className="mb-16">
-            <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">11. Conclusion</h2>
+            <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">10. Conclusion</h2>
             <div className="prose prose-lg text-royal-blue space-y-4">
               <p>
                 The smart contract security landscape is at an inflection point. As blockchain technology matures and
@@ -604,9 +578,9 @@ export default function Whitepaper() {
             </div>
           </section>
 
-          {/* Section 12: Disclaimer */}
-          <section id="section-12" className="mb-16">
-            <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">12. Disclaimer</h2>
+          {/* Section 11: Disclaimer */}
+          <section id="section-11" className="mb-16">
+            <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">11. Disclaimer</h2>
             <div className="prose prose-lg text-royal-blue space-y-4 text-sm">
               <p>
                 This whitepaper is for informational purposes only and does not constitute financial, legal, or investment
