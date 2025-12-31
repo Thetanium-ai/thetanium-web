@@ -79,7 +79,7 @@ export default function Whitepaper() {
                 <li>Real-time monitoring for deployed contracts</li>
                 <li>Hybrid Audit: AI + human expert review</li>
                 <li>Theta Arena: Competitive audits and researcher community</li>
-                <li>Developer integrations: VSCode, GitHub, GitLab, CI/CD, Cursor</li>
+                <li>Developer integrations: VSCode, GitHub, GitLab, CI/CD</li>
               </ul>
             </div>
           </section>
@@ -405,7 +405,6 @@ export default function Whitepaper() {
                   <li><strong>VSCode Extension</strong> — Scan directly from your editor</li>
                   <li><strong>GitHub Integration</strong> — Automated PR security checks</li>
                   <li><strong>GitLab CI/CD</strong> — Pipeline security gates</li>
-                  <li><strong>Cursor IDE</strong> — AI-native development support</li>
                   <li><strong>API Access</strong> — Custom integration for any workflow</li>
                 </ul>
               </div>
