@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 
 export const metadata = {
   title: 'Whitepaper — Thetanium',
-  description: 'Thetanium Whitepaper: AI-powered smart contract security platform making institutional-grade security accessible to everyone.',
+  description: 'Thetanium Whitepaper: AI-powered smart contract security platform.',
 }
 
 export default function Whitepaper() {
@@ -20,9 +20,6 @@ export default function Whitepaper() {
             <h1 className="font-display text-4xl md:text-5xl font-bold text-deep-blue mb-6">
               Thetanium Whitepaper
             </h1>
-            <p className="text-royal-blue text-lg">
-              AI-Powered Smart Contract Security
-            </p>
           </div>
 
           {/* Table of Contents */}
