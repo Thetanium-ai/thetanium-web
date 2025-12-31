@@ -4,7 +4,6 @@ import ShieldLogo from './ShieldLogo'
 const stats = [
   { value: '99%', label: 'Faster than manual audits' },
   { value: '90%', label: 'Cost reduction' },
-  { value: '4+', label: 'Chains supported' },
 ]
 
 export default function Hero() {
