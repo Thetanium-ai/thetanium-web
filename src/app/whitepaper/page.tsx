@@ -485,27 +485,6 @@ export default function Whitepaper() {
                 </ul>
               </div>
 
-              <div>
-                <h3 className="font-display text-xl font-bold text-deep-blue mb-4">Year 1 Targets</h3>
-                <div className="overflow-x-auto">
-                  <table className="w-full border-collapse border border-silver/30 rounded-lg overflow-hidden">
-                    <thead className="bg-light-blue/50">
-                      <tr>
-                        <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Metric</th>
-                        <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Target</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr><td className="border border-silver/30 px-4 py-3">Registered users</td><td className="border border-silver/30 px-4 py-3 font-semibold">10,000+</td></tr>
-                      <tr><td className="border border-silver/30 px-4 py-3">Contracts scanned</td><td className="border border-silver/30 px-4 py-3 font-semibold">50,000+</td></tr>
-                      <tr><td className="border border-silver/30 px-4 py-3">Theta Arena events</td><td className="border border-silver/30 px-4 py-3 font-semibold">12+</td></tr>
-                      <tr><td className="border border-silver/30 px-4 py-3">Chains supported</td><td className="border border-silver/30 px-4 py-3 font-semibold">6+</td></tr>
-                      <tr><td className="border border-silver/30 px-4 py-3">Researcher community</td><td className="border border-silver/30 px-4 py-3 font-semibold">500+</td></tr>
-                      <tr><td className="border border-silver/30 px-4 py-3">Premium subscribers</td><td className="border border-silver/30 px-4 py-3 font-semibold">1,000+</td></tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
             </div>
           </section>
 
