@@ -28,7 +28,7 @@ export default function HowItWorks() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="section-label">How It Works</div>
-          <h2 className="section-title">From Vulnerable to Verified in Minutes</h2>
+          <h2 className="section-title">Smart Security, Simple Process</h2>
         </div>
 
         {/* Steps */}
