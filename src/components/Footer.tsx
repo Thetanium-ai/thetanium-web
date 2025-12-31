@@ -5,23 +5,12 @@ const footerLinks = {
   product: [
     { label: 'Features', href: '#features' },
     { label: 'Pricing', href: '#pricing' },
-    { label: 'Documentation', href: '#' },
   ],
   company: [
-    { label: 'About', href: '#' },
-    { label: 'Blog', href: '#' },
-    { label: 'Careers', href: '#' },
     { label: 'Contact', href: '#' },
   ],
   resources: [
-    { label: 'Whitepaper', href: '#' },
-    { label: 'API Docs', href: '#' },
-    { label: 'GitHub', href: '#' },
-    { label: 'Status', href: '#' },
-  ],
-  legal: [
-    { label: 'Privacy', href: '#' },
-    { label: 'Terms', href: '#' },
+    { label: 'Whitepaper', href: '/whitepaper' },
   ],
 }
 
@@ -43,7 +32,7 @@ export default function Footer() {
               <span className="font-display font-bold text-xl">THETANIUM</span>
             </Link>
             <p className="text-white/60 text-sm mb-6 max-w-xs">
-              AI-powered smart contract security. Making precision-engineered security accessible and affordable for the modern web.
+              Making precision-engineered security accessible and affordable for the modern web.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
@@ -91,19 +80,6 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className="text-white/60 hover:text-white transition-colors text-sm">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-4">Legal</h4>
-            <ul className="space-y-2">
-              {footerLinks.legal.map((link) => (
                 <li key={link.label}>
                   <Link href={link.href} className="text-white/60 hover:text-white transition-colors text-sm">
                     {link.label}
