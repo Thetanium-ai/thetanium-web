@@ -122,19 +122,55 @@ export default function EarlyAccess() {
 
     try {
       // Google Sheets Apps Script URL
-      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx4IFT2gVHgpXDp6Ngc53CGYn0DDpjXo5Mau1SWi29Mghh4mLBgZ_tuggKCZrLTs2fMMA/exec'
+      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzM2PExo1bSqr8c6TDivk3z88_-iwuQ8beW4ri2IQ39e__oPzDICnyTngIotJcX5_t8HQ/exec'
 
-      await fetch(GOOGLE_SCRIPT_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+      // Use JSONP to get response from Google Apps Script
+      const callbackName = 'formCallback_' + Date.now()
+      const params = new URLSearchParams()
+      params.append('name', formData.name)
+      params.append('email', formData.email)
+      params.append('role', formData.role)
+      params.append('country', formData.country)
+      params.append('callback', callbackName)
+
+      const result = await new Promise<string>((resolve) => {
+        // Create global callback function
+        (window as unknown as Record<string, (result: string) => void>)[callbackName] = (result: string) => {
+          resolve(result)
+          delete (window as unknown as Record<string, unknown>)[callbackName]
+        }
+
+        const script = document.createElement('script')
+        script.src = `${GOOGLE_SCRIPT_URL}?${params.toString()}`
+        script.onerror = () => {
+          document.body.removeChild(script)
+          resolve('error')
+        }
+        document.body.appendChild(script)
+
+        // Cleanup after response
+        script.onload = () => {
+          if (script.parentNode) {
+            document.body.removeChild(script)
+          }
+        }
+
+        // Timeout fallback
+        setTimeout(() => {
+          if (script.parentNode) {
+            document.body.removeChild(script)
+          }
+          resolve('timeout')
+        }, 10000)
       })
 
-      // With no-cors, we can't check response, so assume success
-      setSubmitted(true)
+      if (result === 'duplicate') {
+        setSubmitError('This email is already registered.')
+      } else if (result === 'success') {
+        setSubmitted(true)
+      } else {
+        setSubmitError('Something went wrong. Please try again.')
+      }
     } catch {
       setSubmitError('Something went wrong. Please try again.')
     } finally {
