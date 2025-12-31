@@ -3,12 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-  
   body {
-    @apply font-sans bg-white text-deep-blue;
+    @apply font-sans bg-white text-deep-blue antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 

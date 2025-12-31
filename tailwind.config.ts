@@ -17,8 +17,8 @@ const config: Config = {
         'light-blue': '#EBF4FF',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        display: ['Space Grotesk', 'sans-serif'],
+        sans: ['var(--font-inter)', 'sans-serif'],
+        display: ['var(--font-space-grotesk)', 'sans-serif'],
       },
     },
   },

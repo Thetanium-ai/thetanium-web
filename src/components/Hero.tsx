@@ -14,9 +14,9 @@ export default function Hero() {
       <div className="absolute inset-0 bg-grid opacity-50" />
       
       {/* Glow Effect */}
-      <div className="absolute top-0 left-0 w-full h-full">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-blue/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-royal-blue/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-blue/5 rounded-full blur-3xl will-change-transform" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-royal-blue/5 rounded-full blur-3xl will-change-transform" />
       </div>
 
       {/* Background Theta */}
