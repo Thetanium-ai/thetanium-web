@@ -70,16 +70,18 @@ export default function EarlyAccess() {
     setLoading(true)
 
     try {
-      // TODO: Replace with actual API endpoint
-      // const response = await fetch('/api/early-access', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData),
-      // })
-      // if (!response.ok) throw new Error('Failed to submit')
+      const response = await fetch('https://formspree.io/f/mgovwklk', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
 
-      // Simulate API call for now
-      await new Promise((resolve) => setTimeout(resolve, 1000))
+      if (!response.ok) {
+        throw new Error('Failed to submit')
+      }
 
       setSubmitted(true)
     } catch {
