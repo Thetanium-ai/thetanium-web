@@ -29,6 +29,12 @@ const validateEmail = (email: string): boolean => {
   return emailRegex.test(email)
 }
 
+const validateName = (name: string): boolean => {
+  // Allow letters, spaces, hyphens, apostrophes (for names like O'Connor, Mary-Jane)
+  const nameRegex = /^[a-zA-Z\s\-']+$/
+  return nameRegex.test(name.trim())
+}
+
 const countries = [
   'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda',
   'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain',
@@ -80,8 +86,10 @@ export default function EarlyAccess() {
 
     if (!formData.name.trim()) {
       newErrors.name = 'Name is required'
-    } else if (formData.name.trim().length < 2) {
-      newErrors.name = 'Name must be at least 2 characters'
+    } else if (!validateName(formData.name)) {
+      newErrors.name = 'Name should only contain letters'
+    } else if (formData.name.trim().split(/\s+/).length < 2) {
+      newErrors.name = 'Please enter your first and last name'
     }
 
     if (!formData.email.trim()) {
