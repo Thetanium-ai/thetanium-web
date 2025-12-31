@@ -11,13 +11,13 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Background Grid */}
-      <div className="absolute inset-0 bg-grid opacity-50" />
+      {/* <div className="absolute inset-0 bg-grid opacity-50" /> */}
       
-      {/* Glow Effect */}
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-blue/5 rounded-full blur-3xl will-change-transform" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-royal-blue/5 rounded-full blur-3xl will-change-transform" />
-      </div>
+      {/* Glow Effect - disabled for performance */}
+      {/* <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-blue/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-royal-blue/5 rounded-full blur-3xl" />
+      </div> */}
 
       {/* Background Theta */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-5 pointer-events-none">
