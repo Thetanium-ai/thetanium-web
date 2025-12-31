@@ -11,7 +11,6 @@ export default function Navbar() {
     { href: '#features', label: 'Features' },
     { href: '#products', label: 'Products' },
     { href: '#pricing', label: 'Pricing' },
-    { href: '#chains', label: 'Chains' },
   ]
 
   return (
