@@ -91,7 +91,7 @@ export default function Whitepaper() {
 
               <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Supported Ecosystems</h3>
               <p>
-                Solidity (Ethereum, Arbitrum, Optimism, Base, Polygon, BSC, Avalanche), Rust/Anchor (Solana), Move (Aptos, Sui)
+                Solidity (Ethereum, Arbitrum, Optimism, Base, Polygon, BSC, Avalanche, Lisk), Rust/Anchor (Solana), Move (Aptos, Sui)
               </p>
             </div>
           </section>
@@ -553,10 +553,9 @@ export default function Whitepaper() {
                       </tr>
                     </thead>
                     <tbody>
-                      <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Solidity</td><td className="border border-silver/30 px-4 py-3">Full Support</td><td className="border border-silver/30 px-4 py-3">Ethereum, Arbitrum, Optimism, Base, Polygon, BSC, Avalanche</td></tr>
+                      <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Solidity</td><td className="border border-silver/30 px-4 py-3">Full Support</td><td className="border border-silver/30 px-4 py-3">Ethereum, Arbitrum, Optimism, Base, Polygon, BSC, Avalanche, Lisk</td></tr>
                       <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Rust (Anchor)</td><td className="border border-silver/30 px-4 py-3">Full Support</td><td className="border border-silver/30 px-4 py-3">Solana</td></tr>
                       <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Move</td><td className="border border-silver/30 px-4 py-3">Full Support</td><td className="border border-silver/30 px-4 py-3">Aptos, Sui</td></tr>
-                      <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Vyper</td><td className="border border-silver/30 px-4 py-3">Beta</td><td className="border border-silver/30 px-4 py-3">Ethereum, EVM chains</td></tr>
                     </tbody>
                   </table>
                 </div>
