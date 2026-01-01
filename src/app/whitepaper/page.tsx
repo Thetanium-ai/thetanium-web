@@ -616,7 +616,7 @@ export default function Whitepaper() {
                           <li>Enterprise tier and Hybrid Audit service</li>
                           <li>Governance activation</li>
                           <li>Theta Arena reputation and ranking system</li>
-                          <li>CI/CD pipeline integrations (GitLab, Jenkins)</li>
+                          <li>CI/CD pipeline integrations (GitLab)</li>
                           <li>Initial ecosystem partnerships</li>
                         </ul>
                       </td>
