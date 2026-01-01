@@ -597,26 +597,26 @@ export default function Whitepaper() {
                     </tr>
                     <tr>
                       <td className="border border-silver/30 px-4 py-3 font-semibold align-top">Phase 2<br/><span className="font-normal text-sm">Q2 2026</span></td>
-                      <td className="border border-silver/30 px-4 py-3 align-top">Scale & Community</td>
+                      <td className="border border-silver/30 px-4 py-3 align-top">Token & Community</td>
                       <td className="border border-silver/30 px-4 py-3">
                         <ul className="list-disc pl-4 space-y-1 text-sm">
+                          <li>$THETANIUM token launch</li>
+                          <li>Theta Arena beta launch with token rewards</li>
+                          <li>Staking activation</li>
                           <li>Real-time monitoring for deployed contracts</li>
                           <li>Team tier with collaboration features</li>
-                          <li>CI/CD pipeline integrations (GitLab, Jenkins)</li>
-                          <li>Theta Arena beta launch</li>
-                          <li>Security researcher onboarding program</li>
                         </ul>
                       </td>
                     </tr>
                     <tr>
                       <td className="border border-silver/30 px-4 py-3 font-semibold align-top">Phase 3<br/><span className="font-normal text-sm">Q3 2026</span></td>
-                      <td className="border border-silver/30 px-4 py-3 align-top">Token & Enterprise</td>
+                      <td className="border border-silver/30 px-4 py-3 align-top">Enterprise & Growth</td>
                       <td className="border border-silver/30 px-4 py-3">
                         <ul className="list-disc pl-4 space-y-1 text-sm">
-                          <li>$THETANIUM token generation event</li>
                           <li>Enterprise tier and Hybrid Audit service</li>
-                          <li>Staking and governance activation</li>
+                          <li>Governance activation</li>
                           <li>Theta Arena reputation and ranking system</li>
+                          <li>CI/CD pipeline integrations (GitLab, Jenkins)</li>
                           <li>Initial ecosystem partnerships</li>
                         </ul>
                       </td>
