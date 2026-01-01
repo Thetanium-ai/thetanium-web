@@ -47,7 +47,7 @@ export default function Footer() {
               <span className="font-display font-bold text-xl">THETANIUM</span>
             </Link>
             <p className="text-white/60 text-sm mb-6 max-w-xs">
-              Precision security infrastructure that scales with the ecosystem.
+              AI security infrastructure that scales with the ecosystem.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
