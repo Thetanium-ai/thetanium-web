@@ -55,32 +55,44 @@ export default function Whitepaper() {
             <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">1. Executive Summary</h2>
             <div className="prose prose-lg text-royal-blue space-y-4">
               <p>
-                Thetanium is an AI-powered smart contract security platform designed to make institutional-grade security
-                accessible to everyone. As the web evolves from human-operated protocols to AI-driven applications,
-                security infrastructure must evolve from reactive audits to continuous, programmable protection.
+                Smart contract security is broken. Billions of dollars flow through decentralized protocols, yet the
+                security infrastructure protecting them relies on manual audits that are slow, expensive, and scarce.
+                The result: the majority of deployed contracts go unaudited, and billions are lost to preventable exploits.
               </p>
               <p>
-                Our flagship product, ThetaCore, is a multi-agent AI engine that analyzes smart contracts in minutes — not
-                weeks — at a fraction of traditional audit costs. By combining advanced machine learning with deep
-                security expertise, Thetanium delivers audit-grade analysis that detects business logic vulnerabilities
-                traditional tools miss.
+                Thetanium is building the security infrastructure for the next generation of the web. Our core product,
+                ThetaCore, combines static analysis, symbolic execution, and large language models into a multi-agent
+                system that delivers comprehensive security analysis in minutes rather than weeks.
               </p>
-              <blockquote className="border-l-4 border-accent-blue pl-6 italic text-deep-blue my-8">
-                &ldquo;Making precision-engineered security accessible and affordable for the modern web.&rdquo;
-              </blockquote>
+              <p>
+                We are not replacing human auditors — we are augmenting them. ThetaCore handles the systematic analysis
+                that consumes auditor time, while our Hybrid Audit and Theta Arena products connect protocols with
+                expert human reviewers for the highest-stakes deployments.
+              </p>
 
-              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Key Highlights</h3>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>99% faster than traditional manual audits</li>
-                <li>90% cost reduction compared to legacy security firms</li>
-                <li>Multi-chain support: Ethereum, Solana, Aptos, Sui</li>
-                <li>ThetaCore: Proprietary multi-agent AI engine</li>
-                <li>Chat with Theta: Natural language security analysis</li>
-                <li>Real-time monitoring for deployed contracts</li>
-                <li>Hybrid Audit: AI + human expert review</li>
-                <li>Theta Arena: Competitive audits and researcher community</li>
-                <li>Developer integrations: VSCode, GitHub, GitLab, CI/CD</li>
-              </ul>
+              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">What We Offer</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse border border-silver/30 rounded-lg overflow-hidden">
+                  <thead className="bg-light-blue/50">
+                    <tr>
+                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Product</th>
+                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td className="border border-silver/30 px-4 py-3 font-semibold">ThetaCore Scanner</td><td className="border border-silver/30 px-4 py-3">AI-powered vulnerability detection with natural language explanations</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Chat with Theta</td><td className="border border-silver/30 px-4 py-3">Conversational interface for security questions and code review</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Real-Time Monitoring</td><td className="border border-silver/30 px-4 py-3">Continuous on-chain surveillance for deployed contracts</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Hybrid Audit</td><td className="border border-silver/30 px-4 py-3">AI analysis combined with expert human review</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Theta Arena</td><td className="border border-silver/30 px-4 py-3">Competitive audit platform connecting protocols with security researchers</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Supported Ecosystems</h3>
+              <p>
+                Solidity (Ethereum, Arbitrum, Optimism, Base, Polygon, BSC, Avalanche), Rust/Anchor (Solana), Move (Aptos, Sui)
+              </p>
             </div>
           </section>
 
@@ -556,18 +568,54 @@ export default function Whitepaper() {
             <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">9. Token Economics</h2>
             <div className="prose prose-lg text-royal-blue space-y-6">
               <p>
-                The $THETANIUM token creates the economic foundation for Thetanium&apos;s security infrastructure, aligning
-                incentives across developers, security researchers, and the community.
+                The $THETANIUM token is designed to align incentives across all participants in the Thetanium ecosystem:
+                developers seeking security, researchers providing expertise, and protocols requiring continuous protection.
               </p>
 
-              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Token Utility</h3>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Payment</strong> — Primary payment token for services. 20-30% discount vs. fiat.</li>
-                <li><strong>Staking</strong> — Stake to earn yield from platform fees. Est. APY: 8-15%.</li>
-                <li><strong>Governance</strong> — Vote on platform parameters, features, and treasury allocation.</li>
-                <li><strong>Theta Arena</strong> — Fund competitive audit events, stake for researcher credibility, earn rewards.</li>
-                <li><strong>Reputation</strong> — Stake-backed researcher rankings and quality contribution rewards.</li>
-              </ul>
+              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Core Utility</h3>
+              <p>
+                Unlike tokens that exist primarily for speculation, $THETANIUM has direct utility within the platform:
+              </p>
+
+              <div className="space-y-6 mt-4">
+                <div>
+                  <h4 className="font-semibold text-deep-blue">Platform Access & Payments</h4>
+                  <p>
+                    $THETANIUM serves as the primary payment method for Thetanium services. Users paying with $THETANIUM
+                    receive discounted rates compared to fiat payments, creating natural demand as platform usage grows.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-deep-blue">Theta Arena Economics</h4>
+                  <p>
+                    Theta Arena creates a circular economy around security research:
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2 mt-2">
+                    <li><strong>Protocol Sponsors</strong> — Fund audit competitions in $THETANIUM, attracting researcher attention</li>
+                    <li><strong>Researcher Rewards</strong> — Earn $THETANIUM for valid findings, proportional to severity</li>
+                    <li><strong>Reputation Staking</strong> — Researchers stake $THETANIUM to signal credibility; higher stakes unlock premium competitions</li>
+                    <li><strong>Quality Assurance</strong> — Stake slashing for invalid or plagiarized submissions maintains quality</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-deep-blue">Staking & Fee Distribution</h4>
+                  <p>
+                    Token holders can stake $THETANIUM to earn a share of platform fees. This creates alignment between
+                    token holders and platform success — as more developers use Thetanium, staking rewards increase.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-deep-blue">Governance</h4>
+                  <p>
+                    Staked $THETANIUM grants voting rights on protocol parameters including fee structures, treasury
+                    allocation, and new feature prioritization. Governance follows a time-weighted model where longer
+                    staking periods grant proportionally more voting power.
+                  </p>
+                </div>
+              </div>
 
               <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Token Distribution</h3>
               <div className="overflow-x-auto">
@@ -575,19 +623,31 @@ export default function Whitepaper() {
                   <thead className="bg-light-blue/50">
                     <tr>
                       <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Allocation</th>
-                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Percentage</th>
+                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">%</th>
                       <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Vesting</th>
+                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Purpose</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr><td className="border border-silver/30 px-4 py-3">Community & Ecosystem</td><td className="border border-silver/30 px-4 py-3 font-semibold">40%</td><td className="border border-silver/30 px-4 py-3">24 months linear</td></tr>
-                    <tr><td className="border border-silver/30 px-4 py-3">Team & Advisors</td><td className="border border-silver/30 px-4 py-3 font-semibold">20%</td><td className="border border-silver/30 px-4 py-3">12 mo cliff, 36 mo linear</td></tr>
-                    <tr><td className="border border-silver/30 px-4 py-3">Treasury</td><td className="border border-silver/30 px-4 py-3 font-semibold">15%</td><td className="border border-silver/30 px-4 py-3">Governance controlled</td></tr>
-                    <tr><td className="border border-silver/30 px-4 py-3">Investors</td><td className="border border-silver/30 px-4 py-3 font-semibold">15%</td><td className="border border-silver/30 px-4 py-3">6 mo cliff, 24 mo linear</td></tr>
-                    <tr><td className="border border-silver/30 px-4 py-3">Liquidity</td><td className="border border-silver/30 px-4 py-3 font-semibold">10%</td><td className="border border-silver/30 px-4 py-3">At TGE</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Community & Ecosystem</td><td className="border border-silver/30 px-4 py-3">40%</td><td className="border border-silver/30 px-4 py-3">24 mo linear</td><td className="border border-silver/30 px-4 py-3">Arena rewards, grants, airdrops, incentives</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Team & Advisors</td><td className="border border-silver/30 px-4 py-3">20%</td><td className="border border-silver/30 px-4 py-3">12 mo cliff, 36 mo linear</td><td className="border border-silver/30 px-4 py-3">Long-term team alignment</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Treasury</td><td className="border border-silver/30 px-4 py-3">15%</td><td className="border border-silver/30 px-4 py-3">Governance controlled</td><td className="border border-silver/30 px-4 py-3">Protocol development, partnerships</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Investors</td><td className="border border-silver/30 px-4 py-3">15%</td><td className="border border-silver/30 px-4 py-3">6 mo cliff, 24 mo linear</td><td className="border border-silver/30 px-4 py-3">Seed, private, and strategic rounds</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Liquidity</td><td className="border border-silver/30 px-4 py-3">10%</td><td className="border border-silver/30 px-4 py-3">At TGE</td><td className="border border-silver/30 px-4 py-3">DEX/CEX liquidity provision</td></tr>
                   </tbody>
                 </table>
               </div>
+
+              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Value Accrual</h3>
+              <p>
+                $THETANIUM accrues value through multiple mechanisms:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 mt-2">
+                <li><strong>Fee Revenue</strong> — Percentage of platform fees distributed to stakers</li>
+                <li><strong>Burn Mechanism</strong> — Portion of fees permanently burned, reducing supply over time</li>
+                <li><strong>Staking Lock-up</strong> — Tokens staked for governance and rewards reduce circulating supply</li>
+                <li><strong>Arena Deposits</strong> — Researcher stakes and protocol deposits lock tokens during competitions</li>
+              </ul>
 
               <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Token Details</h3>
               <div className="overflow-x-auto">
@@ -601,15 +661,17 @@ export default function Whitepaper() {
                   <tbody>
                     <tr><td className="border border-silver/30 px-4 py-3">Token Name</td><td className="border border-silver/30 px-4 py-3 font-semibold">Thetanium</td></tr>
                     <tr><td className="border border-silver/30 px-4 py-3">Symbol</td><td className="border border-silver/30 px-4 py-3 font-semibold">$THETANIUM</td></tr>
-                    <tr><td className="border border-silver/30 px-4 py-3">Total Supply</td><td className="border border-silver/30 px-4 py-3 font-semibold">1,000,000,000</td></tr>
-                    <tr><td className="border border-silver/30 px-4 py-3">Token Type</td><td className="border border-silver/30 px-4 py-3 font-semibold">ERC-20 / Multi-chain</td></tr>
-                    <tr><td className="border border-silver/30 px-4 py-3">TGE Date</td><td className="border border-silver/30 px-4 py-3 font-semibold">Q3 2026</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3">Total Supply</td><td className="border border-silver/30 px-4 py-3 font-semibold">1,000,000,000 (fixed, deflationary via burn)</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3">Token Standard</td><td className="border border-silver/30 px-4 py-3 font-semibold">ERC-20 with cross-chain bridges</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3">Target TGE</td><td className="border border-silver/30 px-4 py-3 font-semibold">Q3 2026</td></tr>
                   </tbody>
                 </table>
               </div>
 
-              <p className="text-sm italic mt-4">
-                Note: Token details are subject to change. Final parameters will be announced prior to TGE.
+              <p className="text-sm italic mt-6 p-4 bg-light-blue/30 rounded-lg">
+                <strong>Note:</strong> Token economics are subject to refinement based on market conditions and regulatory
+                guidance. Final parameters will be published prior to TGE. This document does not constitute an offer to
+                sell tokens.
               </p>
             </div>
           </section>
