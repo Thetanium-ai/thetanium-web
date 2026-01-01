@@ -566,52 +566,82 @@ export default function Whitepaper() {
           {/* Section 8: Roadmap */}
           <section id="section-8" className="mb-16">
             <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">8. Roadmap</h2>
-            <div className="prose prose-lg text-royal-blue space-y-8">
+            <div className="prose prose-lg text-royal-blue space-y-6">
+              <p>
+                Development is organized into four phases, each building on the previous. Timelines are indicative
+                and may adjust based on technical progress and market conditions.
+              </p>
 
-              <div>
-                <h3 className="font-display text-xl font-bold text-deep-blue mb-4">Q1 2026 — Platform Launch</h3>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>ThetaCore Scanner public beta</li>
-                  <li>Chat with Theta release</li>
-                  <li>Free and Pro tier availability</li>
-                  <li>VSCode and GitHub integrations</li>
-                  <li>Ethereum, Solana, Aptos, Sui support</li>
-                </ul>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse border border-silver/30 rounded-lg overflow-hidden">
+                  <thead className="bg-light-blue/50">
+                    <tr>
+                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue w-1/4">Phase</th>
+                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Focus</th>
+                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Key Deliverables</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border border-silver/30 px-4 py-3 font-semibold align-top">Phase 1<br/><span className="font-normal text-sm">Q1 2026</span></td>
+                      <td className="border border-silver/30 px-4 py-3 align-top">Platform Launch</td>
+                      <td className="border border-silver/30 px-4 py-3">
+                        <ul className="list-disc pl-4 space-y-1 text-sm">
+                          <li>ThetaCore Scanner public beta</li>
+                          <li>Chat with Theta release</li>
+                          <li>Free and Pro tier availability</li>
+                          <li>VSCode and GitHub integrations</li>
+                          <li>Multi-chain support (Ethereum, Solana, Aptos, Sui)</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-silver/30 px-4 py-3 font-semibold align-top">Phase 2<br/><span className="font-normal text-sm">Q2 2026</span></td>
+                      <td className="border border-silver/30 px-4 py-3 align-top">Scale & Community</td>
+                      <td className="border border-silver/30 px-4 py-3">
+                        <ul className="list-disc pl-4 space-y-1 text-sm">
+                          <li>Real-time monitoring for deployed contracts</li>
+                          <li>Team tier with collaboration features</li>
+                          <li>CI/CD pipeline integrations (GitLab, Jenkins)</li>
+                          <li>Theta Arena beta launch</li>
+                          <li>Security researcher onboarding program</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-silver/30 px-4 py-3 font-semibold align-top">Phase 3<br/><span className="font-normal text-sm">Q3 2026</span></td>
+                      <td className="border border-silver/30 px-4 py-3 align-top">Token & Enterprise</td>
+                      <td className="border border-silver/30 px-4 py-3">
+                        <ul className="list-disc pl-4 space-y-1 text-sm">
+                          <li>$THETANIUM token generation event</li>
+                          <li>Enterprise tier and Hybrid Audit service</li>
+                          <li>Staking and governance activation</li>
+                          <li>Theta Arena reputation and ranking system</li>
+                          <li>Initial ecosystem partnerships</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-silver/30 px-4 py-3 font-semibold align-top">Phase 4<br/><span className="font-normal text-sm">Q4 2026+</span></td>
+                      <td className="border border-silver/30 px-4 py-3 align-top">Expansion</td>
+                      <td className="border border-silver/30 px-4 py-3">
+                        <ul className="list-disc pl-4 space-y-1 text-sm">
+                          <li>Theta-Bench benchmark dataset (open-source)</li>
+                          <li>White-label solutions for partners</li>
+                          <li>Advanced threat detection and monitoring</li>
+                          <li>Global Theta Arena competitions</li>
+                          <li>Additional chain and language support</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
 
-              <div>
-                <h3 className="font-display text-xl font-bold text-deep-blue mb-4">Q2 2026 — Growth & Community</h3>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Real-time monitoring launch</li>
-                  <li>Team tier release</li>
-                  <li>CI/CD pipeline integrations</li>
-                  <li>Theta Arena beta launch</li>
-                  <li>Security researcher onboarding</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="font-display text-xl font-bold text-deep-blue mb-4">Q3 2026 — Enterprise & Token</h3>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>$THETANIUM token launch</li>
-                  <li>Enterprise tier and Hybrid Audit</li>
-                  <li>Staking and governance features</li>
-                  <li>Theta Arena reputation system</li>
-                  <li>First ecosystem audit partnerships</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="font-display text-xl font-bold text-deep-blue mb-4">Q4 2026 & Beyond</h3>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Theta-Bench open-source release</li>
-                  <li>White-label solutions for partners</li>
-                  <li>Advanced monitoring features</li>
-                  <li>Global Theta Arena expansion</li>
-                  <li>Additional chain integrations</li>
-                </ul>
-              </div>
-
+              <p className="text-sm italic mt-4 p-4 bg-light-blue/30 rounded-lg">
+                <strong>Note:</strong> This roadmap reflects current planning and is subject to change. We prioritize
+                shipping quality over meeting arbitrary deadlines. Updates will be shared via official channels.
+              </p>
             </div>
           </section>
 
