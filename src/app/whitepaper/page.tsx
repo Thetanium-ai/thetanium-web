@@ -101,7 +101,7 @@ export default function Whitepaper() {
             <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">2. Mission</h2>
             <div className="prose prose-lg text-royal-blue space-y-4">
               <p className="text-xl font-semibold text-deep-blue">
-                Build security infrastructure that scales with the ecosystem.
+                Precision security infrastructure that scales with the ecosystem.
               </p>
               <p>
                 The blockchain ecosystem deploys thousands of new contracts daily. Traditional audit firms, constrained by
