@@ -101,26 +101,29 @@ export default function Whitepaper() {
             <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">2. Mission</h2>
             <div className="prose prose-lg text-royal-blue space-y-4">
               <p className="text-xl font-semibold text-deep-blue">
-                Making precision-engineered security accessible and affordable for the modern web.
+                Build security infrastructure that scales with the ecosystem.
               </p>
               <p>
-                The smart contract security market is projected to exceed $15 billion by 2028, yet the vast majority of
-                deployed contracts remain unaudited. Traditional security audits are expensive, slow, and inaccessible to
-                most developers. This creates a critical gap in the ecosystem — one that malicious actors exploit daily.
+                The blockchain ecosystem deploys thousands of new contracts daily. Traditional audit firms, constrained by
+                human capacity, can only serve a fraction of this demand. The result is a two-tier security landscape:
+                well-funded protocols receive thorough audits while the majority ship unreviewed code.
               </p>
               <p>
-                Thetanium exists to close this gap. We believe everyone, regardless of budget or technical expertise,
-                deserves access to world-class security tooling. Our mission is to democratize security without
-                compromising quality.
+                Thetanium exists to change this dynamic. By combining AI capabilities with human expertise, we can provide
+                meaningful security analysis to every project — from solo developers to institutional protocols.
               </p>
 
-              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Core Principles</h3>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Accessible</strong> — Free tier for all developers, no gatekeeping</li>
-                <li><strong>Affordable</strong> — 90% cheaper than traditional audits</li>
-                <li><strong>Continuous</strong> — AI-powered, real-time, always-on protection</li>
-                <li><strong>Precise</strong> — Institutional-grade detection accuracy</li>
-              </ul>
+              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Guiding Principles</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse border border-silver/30 rounded-lg overflow-hidden">
+                  <tbody>
+                    <tr><td className="border border-silver/30 px-4 py-3 font-semibold w-1/4">Accessibility</td><td className="border border-silver/30 px-4 py-3">Free tier available to all developers. Security should not be gated by budget.</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Speed</td><td className="border border-silver/30 px-4 py-3">Analysis in minutes, not weeks. Security checks at every stage of development.</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Depth</td><td className="border border-silver/30 px-4 py-3">Beyond pattern matching. Business logic analysis that catches what static tools miss.</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Transparency</td><td className="border border-silver/30 px-4 py-3">Clear explanations for every finding. Developers understand the &ldquo;why,&rdquo; not just the &ldquo;what.&rdquo;</td></tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </section>
 
@@ -175,34 +178,50 @@ export default function Whitepaper() {
             <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">4. The Problem</h2>
             <div className="prose prose-lg text-royal-blue space-y-4">
               <p>
-                The current smart contract security landscape is fundamentally broken. Despite billions of dollars flowing
-                through decentralized protocols, the security infrastructure protecting these systems has not kept pace.
+                Smart contract exploits have resulted in billions of dollars in losses. Yet the tools and processes
+                designed to prevent these incidents remain stuck in an earlier era of software development.
               </p>
 
-              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Key Challenges</h3>
+              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Why Current Solutions Fall Short</h3>
 
-              <div className="space-y-6">
-                <div>
-                  <h4 className="font-semibold text-deep-blue">Prohibitive Costs</h4>
-                  <p>Traditional audits cost $50,000 to $500,000, putting professional security out of reach for most projects.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-deep-blue">Slow Turnaround</h4>
-                  <p>Manual audits take 4-8 weeks, creating dangerous gaps in the development cycle.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-deep-blue">Limited Coverage</h4>
-                  <p>Static analysis tools only catch known vulnerability patterns, missing the business logic flaws that cause the largest exploits.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-deep-blue">Talent Shortage</h4>
-                  <p>There simply aren&apos;t enough qualified security researchers to audit the volume of contracts being deployed.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-deep-blue">One-Time Snapshots</h4>
-                  <p>Traditional audits provide point-in-time assessments, offering no protection against vulnerabilities introduced in subsequent updates.</p>
-                </div>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse border border-silver/30 rounded-lg overflow-hidden">
+                  <thead className="bg-light-blue/50">
+                    <tr>
+                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Challenge</th>
+                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Impact</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border border-silver/30 px-4 py-3 font-semibold">Cost Barrier</td>
+                      <td className="border border-silver/30 px-4 py-3">Audits priced at $30K-$500K exclude early-stage projects and independent developers</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-silver/30 px-4 py-3 font-semibold">Timeline Friction</td>
+                      <td className="border border-silver/30 px-4 py-3">Multi-week audit cycles slow development and create pressure to skip security reviews</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-silver/30 px-4 py-3 font-semibold">Static Tool Limitations</td>
+                      <td className="border border-silver/30 px-4 py-3">Pattern-matching tools miss business logic vulnerabilities — the cause of most major exploits</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-silver/30 px-4 py-3 font-semibold">Auditor Scarcity</td>
+                      <td className="border border-silver/30 px-4 py-3">Qualified security researchers are in short supply; demand far exceeds capacity</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-silver/30 px-4 py-3 font-semibold">Point-in-Time Coverage</td>
+                      <td className="border border-silver/30 px-4 py-3">One-time audits become stale as code evolves; post-audit changes go unreviewed</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
+
+              <p className="mt-6">
+                The consequence is predictable: projects either delay launches waiting for audit slots, skip security
+                reviews entirely, or rely solely on automated tools that provide false confidence. Each path carries
+                significant risk.
+              </p>
             </div>
           </section>
 
@@ -211,36 +230,70 @@ export default function Whitepaper() {
             <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">5. Our Solution</h2>
             <div className="prose prose-lg text-royal-blue space-y-4">
               <p>
-                Thetanium addresses these challenges with AI-native infrastructure that delivers audit-grade analysis in
-                minutes at less than 1% of traditional cost.
+                Thetanium provides a layered security stack that addresses different needs at different stages of
+                the development lifecycle.
               </p>
 
-              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">How We&apos;re Different</h3>
+              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">The Thetanium Stack</h3>
 
-              <div className="space-y-6">
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse border border-silver/30 rounded-lg overflow-hidden">
+                  <thead className="bg-light-blue/50">
+                    <tr>
+                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Layer</th>
+                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">When</th>
+                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">How</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border border-silver/30 px-4 py-3 font-semibold">Development</td>
+                      <td className="border border-silver/30 px-4 py-3">While coding</td>
+                      <td className="border border-silver/30 px-4 py-3">IDE plugins, Chat with Theta for real-time guidance</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-silver/30 px-4 py-3 font-semibold">Pre-Deployment</td>
+                      <td className="border border-silver/30 px-4 py-3">Before launch</td>
+                      <td className="border border-silver/30 px-4 py-3">ThetaCore full scan, CI/CD gates, PR checks</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-silver/30 px-4 py-3 font-semibold">High-Stakes Review</td>
+                      <td className="border border-silver/30 px-4 py-3">Major releases</td>
+                      <td className="border border-silver/30 px-4 py-3">Hybrid Audit (AI + human), Theta Arena competitions</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-silver/30 px-4 py-3 font-semibold">Post-Deployment</td>
+                      <td className="border border-silver/30 px-4 py-3">After launch</td>
+                      <td className="border border-silver/30 px-4 py-3">Real-time monitoring, anomaly detection, alerts</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Key Differentiators</h3>
+
+              <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-deep-blue">AI-First Architecture</h4>
-                  <p>ThetaCore uses a multi-agent system that mirrors how elite security research teams operate.</p>
+                  <h4 className="font-semibold text-deep-blue">AI + Human, Not AI vs. Human</h4>
+                  <p>
+                    We don&apos;t position AI as a replacement for human auditors. ThetaCore handles systematic analysis
+                    efficiently, freeing human experts to focus on complex logic, edge cases, and novel attack vectors.
+                    Our Hybrid Audit and Theta Arena products formalize this collaboration.
+                  </p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-deep-blue">Minutes, Not Weeks</h4>
-                  <p>Full logic-level analysis completes in minutes, enabling security checks at every stage of development.</p>
+                  <h4 className="font-semibold text-deep-blue">Continuous, Not One-Time</h4>
+                  <p>
+                    Security is integrated into the development workflow, not bolted on at the end. Every commit can
+                    trigger a scan. Post-deployment monitoring catches issues that emerge in production.
+                  </p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-deep-blue">Accessible Pricing</h4>
-                  <p>Free tier for individual developers. Pro tier at $49/month. No project should go unaudited due to cost.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-deep-blue">Continuous Learning</h4>
-                  <p>Unlike static rule sets, ThetaCore improves with every scan, learning from new patterns and emerging attack vectors.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-deep-blue">Human + AI Hybrid</h4>
-                  <p>For institutional clients requiring the highest assurance, our hybrid audit combines AI speed with expert human review.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-deep-blue">Theta Arena</h4>
-                  <p>Our community platform — elite researchers compete in time-boxed audit events for protocols and ecosystems.</p>
+                  <p>
+                    Free tier for individual developers. Paid tiers priced for startups and teams, not just enterprises.
+                    The goal: no project goes unreviewed due to cost.
+                  </p>
                 </div>
               </div>
             </div>
@@ -681,23 +734,29 @@ export default function Whitepaper() {
             <h2 className="font-display text-3xl font-bold text-deep-blue mb-6">10. Conclusion</h2>
             <div className="prose prose-lg text-royal-blue space-y-4">
               <p>
-                The smart contract security landscape is at an inflection point. As blockchain technology matures and
-                manages increasing value, the gap between security demand and available supply continues to widen.
-                Traditional approaches cannot scale to meet this challenge.
+                The blockchain ecosystem has a security problem that traditional approaches cannot solve at scale.
+                Manual audits serve a critical purpose but cannot keep pace with the volume of code being deployed.
+                Static analysis tools catch known patterns but miss the business logic flaws that cause major exploits.
               </p>
               <p>
-                Thetanium offers a new paradigm: AI-native security infrastructure that is fast, affordable, and
-                continuously improving. By combining the speed and scalability of AI with the rigor of institutional-grade
-                security practices, we&apos;re making professional security accessible to everyone.
+                Thetanium represents a different approach: AI-powered analysis that combines the speed of automation
+                with the depth of expert review. ThetaCore provides immediate, accessible security analysis. Hybrid
+                Audit and Theta Arena connect protocols with human expertise when stakes are highest.
+              </p>
+              <p>
+                Our goal is straightforward: ensure that every smart contract — regardless of the team&apos;s budget or
+                timeline — receives meaningful security review before deployment. By making security accessible and
+                continuous, we can reduce the attack surface across the entire ecosystem.
               </p>
 
-              <blockquote className="border-l-4 border-accent-blue pl-6 italic text-deep-blue my-8">
-                &ldquo;Making precision-engineered security accessible and affordable for the modern web.&rdquo;
-              </blockquote>
-
-              <p className="font-semibold text-deep-blue">
-                Join us in building the security infrastructure for the modern web.
-              </p>
+              <div className="bg-light-blue/30 p-6 rounded-xl mt-8">
+                <h3 className="font-display text-xl font-bold text-deep-blue mb-4">Get Started</h3>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Sign up for early access at <strong>thetanium.ai</strong></li>
+                  <li>Follow development updates on Twitter <strong>@thetanium_ai</strong></li>
+                  <li>Review our code on GitHub <strong>github.com/thetanium-ai</strong></li>
+                </ul>
+              </div>
             </div>
           </section>
 
