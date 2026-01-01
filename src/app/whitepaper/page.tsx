@@ -122,29 +122,38 @@ export default function Whitepaper() {
                 security solutions continues to accelerate.
               </p>
 
-              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Market Statistics</h3>
+              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">The Security Gap</h3>
+              <p>
+                According to DeFiLlama and Rekt.news, over $6 billion has been lost to smart contract exploits since 2020,
+                with 2023-2024 alone accounting for approximately $4 billion in losses. Despite these figures, the vast
+                majority of deployed contracts remain unaudited due to cost and time constraints.
+              </p>
+
+              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">Market Dynamics</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse border border-silver/30 rounded-lg overflow-hidden">
                   <thead className="bg-light-blue/50">
                     <tr>
-                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Metric</th>
-                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Value</th>
+                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Challenge</th>
+                      <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Current State</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr><td className="border border-silver/30 px-4 py-3">Security market by 2028</td><td className="border border-silver/30 px-4 py-3 font-semibold">$15B+</td></tr>
-                    <tr><td className="border border-silver/30 px-4 py-3">Lost to exploits (2023-2024)</td><td className="border border-silver/30 px-4 py-3 font-semibold">$4B+</td></tr>
-                    <tr><td className="border border-silver/30 px-4 py-3">Projects lacking audits</td><td className="border border-silver/30 px-4 py-3 font-semibold">97%</td></tr>
-                    <tr><td className="border border-silver/30 px-4 py-3">Contracts deployed monthly</td><td className="border border-silver/30 px-4 py-3 font-semibold">200,000+</td></tr>
-                    <tr><td className="border border-silver/30 px-4 py-3">Contracts unaudited</td><td className="border border-silver/30 px-4 py-3 font-semibold">80%</td></tr>
-                    <tr><td className="border border-silver/30 px-4 py-3">Traditional audit cost</td><td className="border border-silver/30 px-4 py-3 font-semibold">$50K - $500K</td></tr>
-                    <tr><td className="border border-silver/30 px-4 py-3">Traditional audit timeline</td><td className="border border-silver/30 px-4 py-3 font-semibold">4-8 weeks</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3">Traditional audit cost</td><td className="border border-silver/30 px-4 py-3 font-semibold">$30K - $500K per engagement</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3">Audit timeline</td><td className="border border-silver/30 px-4 py-3 font-semibold">2-8 weeks depending on complexity</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3">Qualified auditors globally</td><td className="border border-silver/30 px-4 py-3 font-semibold">Limited supply, high demand</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3">New contracts deployed</td><td className="border border-silver/30 px-4 py-3 font-semibold">Thousands daily across chains</td></tr>
+                    <tr><td className="border border-silver/30 px-4 py-3">Audit coverage</td><td className="border border-silver/30 px-4 py-3 font-semibold">Minority of deployed contracts</td></tr>
                   </tbody>
                 </table>
               </div>
+
+              <h3 className="font-display text-xl font-bold text-deep-blue mt-8 mb-4">The Opportunity</h3>
               <p>
-                The gap between security demand and available supply creates a massive opportunity for AI-native solutions
-                that can scale without the constraints of human-only audit teams.
+                The structural imbalance between security demand and auditor supply creates a significant market opportunity.
+                AI-native security solutions can scale horizontally in ways human-only teams cannot, addressing the long tail
+                of projects that currently go unaudited. As the blockchain ecosystem matures and institutional capital flows
+                increase, the demand for accessible, continuous security infrastructure will only grow.
               </p>
             </div>
           </section>
@@ -361,51 +370,109 @@ export default function Whitepaper() {
             <div className="prose prose-lg text-royal-blue space-y-8">
 
               <div>
-                <h3 className="font-display text-xl font-bold text-deep-blue mb-4">ThetaCore Engine</h3>
+                <h3 className="font-display text-xl font-bold text-deep-blue mb-4">ThetaCore Architecture</h3>
                 <p>
-                  ThetaCore is Thetanium&apos;s proprietary AI engine, purpose-built for smart contract security analysis.
-                  Unlike generic AI models or static analysis tools, ThetaCore is trained specifically on vulnerability
-                  patterns, exploit vectors, and secure coding practices.
+                  ThetaCore is Thetanium&apos;s proprietary security analysis engine. Rather than relying on pattern matching
+                  or single-pass static analysis, ThetaCore employs a multi-agent architecture where specialized analysis
+                  modules operate in parallel and cross-validate findings.
+                </p>
+                <p className="mt-4">
+                  The system combines three complementary approaches:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 mt-4">
+                  <li><strong>Static Analysis</strong> — AST parsing, control flow graph construction, and data flow analysis to identify known vulnerability patterns</li>
+                  <li><strong>Symbolic Execution</strong> — Path-sensitive analysis that explores execution branches to find edge cases and constraint violations</li>
+                  <li><strong>LLM-Powered Reasoning</strong> — Large language models trained on security datasets that understand business logic, identify specification mismatches, and explain findings in natural language</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="font-display text-xl font-bold text-deep-blue mb-4">Multi-Agent Analysis Pipeline</h3>
+                <p>
+                  Each scan activates multiple specialized agents that analyze the contract from different perspectives:
+                </p>
+                <div className="overflow-x-auto mt-4">
+                  <table className="w-full border-collapse border border-silver/30 rounded-lg overflow-hidden">
+                    <thead className="bg-light-blue/50">
+                      <tr>
+                        <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Agent</th>
+                        <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Focus Area</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Reentrancy Analyzer</td><td className="border border-silver/30 px-4 py-3">Cross-function and cross-contract reentrancy, state inconsistencies</td></tr>
+                      <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Access Control Auditor</td><td className="border border-silver/30 px-4 py-3">Permission hierarchies, ownership patterns, authorization logic</td></tr>
+                      <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Economic Logic Validator</td><td className="border border-silver/30 px-4 py-3">Oracle manipulation, flash loan vectors, MEV exposure</td></tr>
+                      <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Invariant Checker</td><td className="border border-silver/30 px-4 py-3">Protocol invariants, accounting consistency, edge cases</td></tr>
+                      <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Specification Verifier</td><td className="border border-silver/30 px-4 py-3">Implementation vs. intended behavior, documentation mismatches</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p className="mt-4">
+                  Findings from each agent are aggregated, deduplicated, and ranked by severity. Cross-validation between
+                  agents reduces false positives while ensuring comprehensive coverage.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-display text-xl font-bold text-deep-blue mb-4">ThetaCore Capabilities</h3>
-                <p>
-                  ThetaCore employs a multi-agent architecture that analyzes smart contracts across multiple security
-                  dimensions simultaneously:
-                </p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Detects cross-function and cross-contract reentrancy vulnerabilities</li>
-                  <li>Audits permissions, ownership structures, and authorization logic</li>
-                  <li>Identifies oracle manipulation and MEV vulnerabilities</li>
-                  <li>Tracks execution paths across complex DeFi protocols</li>
-                  <li>Verifies implementation matches intended specification</li>
-                  <li>Comprehensive coverage for emerging and novel attack vectors</li>
+                <h3 className="font-display text-xl font-bold text-deep-blue mb-4">Detection Categories</h3>
+                <p>ThetaCore detects vulnerabilities across the following categories:</p>
+                <ul className="list-disc pl-6 space-y-2 mt-4">
+                  <li><strong>Reentrancy</strong> — Single-function, cross-function, cross-contract, and read-only reentrancy</li>
+                  <li><strong>Access Control</strong> — Missing modifiers, privilege escalation, improper authorization</li>
+                  <li><strong>Integer Handling</strong> — Overflow/underflow, precision loss, rounding errors</li>
+                  <li><strong>External Calls</strong> — Unchecked returns, arbitrary calls, callback vulnerabilities</li>
+                  <li><strong>Oracle & Price Feeds</strong> — Manipulation vectors, stale data, single-source dependencies</li>
+                  <li><strong>Logic Errors</strong> — Incorrect state transitions, flawed calculations, edge cases</li>
+                  <li><strong>Gas & DoS</strong> — Unbounded loops, block gas limits, griefing vectors</li>
                 </ul>
               </div>
 
               <div>
                 <h3 className="font-display text-xl font-bold text-deep-blue mb-4">Continuous Learning (CARL)</h3>
                 <p>
-                  ThetaCore implements Continuous Auditing and Retraining Loop (CARL) — a self-evolution mechanism that
-                  ensures the platform improves with every scan.
+                  ThetaCore implements a Continuous Auditing and Retraining Loop (CARL) that enables the system to improve
+                  over time. New vulnerability patterns discovered in the wild, findings from Theta Arena competitions,
+                  and validated community submissions are incorporated into the training pipeline.
                 </p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Automated retraining pipelines</li>
-                  <li>Validated vulnerability data feedback</li>
-                  <li>Community-contributed threat intelligence</li>
-                  <li>Regular model updates and improvements</li>
-                </ul>
+                <p className="mt-4">
+                  This feedback loop ensures ThetaCore stays current with emerging attack vectors rather than being limited
+                  to vulnerabilities known at training time.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-display text-xl font-bold text-deep-blue mb-4">Comparison with Existing Tools</h3>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse border border-silver/30 rounded-lg overflow-hidden">
+                    <thead className="bg-light-blue/50">
+                      <tr>
+                        <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Capability</th>
+                        <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Static Analyzers</th>
+                        <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Manual Audits</th>
+                        <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">ThetaCore</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td className="border border-silver/30 px-4 py-3">Known vulnerability patterns</td><td className="border border-silver/30 px-4 py-3">Yes</td><td className="border border-silver/30 px-4 py-3">Yes</td><td className="border border-silver/30 px-4 py-3">Yes</td></tr>
+                      <tr><td className="border border-silver/30 px-4 py-3">Business logic analysis</td><td className="border border-silver/30 px-4 py-3">Limited</td><td className="border border-silver/30 px-4 py-3">Yes</td><td className="border border-silver/30 px-4 py-3">Yes</td></tr>
+                      <tr><td className="border border-silver/30 px-4 py-3">Cross-contract analysis</td><td className="border border-silver/30 px-4 py-3">Limited</td><td className="border border-silver/30 px-4 py-3">Yes</td><td className="border border-silver/30 px-4 py-3">Yes</td></tr>
+                      <tr><td className="border border-silver/30 px-4 py-3">Natural language explanations</td><td className="border border-silver/30 px-4 py-3">No</td><td className="border border-silver/30 px-4 py-3">Yes</td><td className="border border-silver/30 px-4 py-3">Yes</td></tr>
+                      <tr><td className="border border-silver/30 px-4 py-3">Analysis time</td><td className="border border-silver/30 px-4 py-3">Minutes</td><td className="border border-silver/30 px-4 py-3">Weeks</td><td className="border border-silver/30 px-4 py-3">Minutes</td></tr>
+                      <tr><td className="border border-silver/30 px-4 py-3">Continuous improvement</td><td className="border border-silver/30 px-4 py-3">Manual updates</td><td className="border border-silver/30 px-4 py-3">N/A</td><td className="border border-silver/30 px-4 py-3">Automated (CARL)</td></tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
               <div>
                 <h3 className="font-display text-xl font-bold text-deep-blue mb-4">Developer Integrations</h3>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li><strong>VSCode Extension</strong> — Scan directly from your editor</li>
-                  <li><strong>GitHub Integration</strong> — Automated PR security checks</li>
-                  <li><strong>GitLab CI/CD</strong> — Pipeline security gates</li>
-                  <li><strong>API Access</strong> — Custom integration for any workflow</li>
+                  <li><strong>VSCode Extension</strong> — Real-time analysis as you code with inline annotations</li>
+                  <li><strong>GitHub App</strong> — Automated security checks on pull requests with detailed comments</li>
+                  <li><strong>GitLab CI/CD</strong> — Pipeline integration with configurable severity thresholds</li>
+                  <li><strong>REST API</strong> — Programmatic access for custom integrations and automation</li>
+                  <li><strong>CLI Tool</strong> — Local scanning for development and scripting workflows</li>
                 </ul>
               </div>
 
@@ -417,13 +484,14 @@ export default function Whitepaper() {
                       <tr>
                         <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Language</th>
                         <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Status</th>
-                        <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Use Cases</th>
+                        <th className="border border-silver/30 px-4 py-3 text-left text-deep-blue">Ecosystems</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Solidity</td><td className="border border-silver/30 px-4 py-3">Full Support</td><td className="border border-silver/30 px-4 py-3">Ethereum, EVM L2s, EVM chains</td></tr>
-                      <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Rust</td><td className="border border-silver/30 px-4 py-3">Full Support</td><td className="border border-silver/30 px-4 py-3">Solana programs</td></tr>
+                      <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Solidity</td><td className="border border-silver/30 px-4 py-3">Full Support</td><td className="border border-silver/30 px-4 py-3">Ethereum, Arbitrum, Optimism, Base, Polygon, BSC, Avalanche</td></tr>
+                      <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Rust (Anchor)</td><td className="border border-silver/30 px-4 py-3">Full Support</td><td className="border border-silver/30 px-4 py-3">Solana</td></tr>
                       <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Move</td><td className="border border-silver/30 px-4 py-3">Full Support</td><td className="border border-silver/30 px-4 py-3">Aptos, Sui</td></tr>
+                      <tr><td className="border border-silver/30 px-4 py-3 font-semibold">Vyper</td><td className="border border-silver/30 px-4 py-3">Beta</td><td className="border border-silver/30 px-4 py-3">Ethereum, EVM chains</td></tr>
                     </tbody>
                   </table>
                 </div>
