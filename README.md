@@ -105,4 +105,4 @@ NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 
 ## License
 
-© 2025 Thetanium. All rights reserved.
+© 2026 Thetanium. All rights reserved.

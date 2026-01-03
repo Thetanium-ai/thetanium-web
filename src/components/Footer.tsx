@@ -108,7 +108,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/40 text-sm">
-            © 2025 Thetanium. All rights reserved.
+            © 2026 Thetanium. All rights reserved.
           </p>
         </div>
       </div>
