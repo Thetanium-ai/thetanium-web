@@ -782,8 +782,6 @@ export default function Whitepaper() {
                 <h3 className="font-display text-xl font-bold text-deep-blue mb-4">Get Started</h3>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Sign up for early access at <strong>thetaniumai.com</strong></li>
-                  <li>Follow development updates on Twitter <strong>@thetanium_ai</strong></li>
-                  <li>Review our code on GitHub <strong>github.com/thetanium-ai</strong></li>
                 </ul>
               </div>
             </div>
